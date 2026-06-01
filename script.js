@@ -29,3 +29,11 @@ const mostrarLista = () => {
     });
   }
 };
+
+agregarProducto("leche");
+agregarProducto("pan");
+agregarProducto("huevo");
+agregarProducto("leche");  
+mostrarLista();
+eliminarProducto("pan");
+mostrarLista();
