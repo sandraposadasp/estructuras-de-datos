@@ -18,3 +18,14 @@ const eliminarProducto = (producto) => {
     console.log(`"${producto}" no está en la lista.`);
   }
 };
+
+const mostrarLista = () => {
+  if (listaDeCompras.length === 0) {
+    console.log("La lista está vacía.");
+  } else {
+    console.log("Lista de compras:");
+    listaDeCompras.forEach((producto, i) => {
+      console.log(`  ${i + 1}. ${producto}`);
+    });
+  }
+};
